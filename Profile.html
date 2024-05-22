@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar's Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #007BFF;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border: 1px solid #007BFF;
+            padding: 10px;
+        }
+        
+        .info div {
+            flex: 1;
+            padding: 10px;
+        }
+        
+        .info div:nth-child(2) {
+            text-align: right;
+        }
+        
+        .info a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        
+        .about,
+        .education,
+        .skills,
+        .contact,
+        .extra {
+            margin-bottom: 20px;
+            border: 1px solid #007BFF;
+            padding: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: #fff;
+        }
+        
+        .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .photo img {
+            border: 1px solid #007BFF;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Abhishek Kumar</h1>
+            <p>Computer Science and Engineering Student at MIT ADT</p>
+        </header>
+        <div class="photo">
+            <img src="C:\Users\Abhishek\OneDrive\Documents\DSA\Profile\Profile.png" alt="Abhishek Kumar's Photo">
+        </div>
+        <div class="info">
+            <div>
+                <p><strong>Phone:</strong> 9508633574</p>
+                <p><strong>Email:</strong> <a href="mailto:abhishekkumar153863@gmail.com">abhishekkumar153863@gmail.com</a></p>
+            </div>
+            <div>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Abhishek22K">Abhishek22K</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abhishek-kumar-a2b7b9271">abhishek-kumar-a2b7b9271</a></p>
+            </div>
+        </div>
+        <div class="about">
+            <h2>About Me</h2>
+            <p>
+                I am Abhishek Kumar, a third-year student at MIT ADT College specializing in Cybersecurity and Forensics. With a diverse range of certifications and hands-on experience, I excel in areas such as Ethical Hacking, Android App Development, and Java Full
+                Stack Development. My passion for continuous learning and innovation drives me to stay updated with the latest technologies and security trends, making me a valuable asset in any cybersecurity or software development team.
+            </p>
+        </div>
+        <div class="education">
+            <h2>Education</h2>
+            <p><strong>MIT ADT - School of Engineering</strong> (2021 - 2025)<br> B.Tech. - CSE - Cyber Security and Forensics | CGPA: 6.75 / 10</p>
+            <p><strong>Army Public School Pune, Pune</strong> (2019 - 2021)<br> 12
+                <sup>th</sup> | CBSE | Percentage: 74.80 / 100</p>
+            <p><strong>Army Public School Pune, Pune</strong> (2017 - 2019)<br> 10
+                <sup>th</sup> | CBSE | Percentage: 79.80 / 100</p>
+        </div>
+        <div class="skills">
+            <h2>Key Expertise</h2>
+            <ul>
+                <li>Java Full Stack Development</li>
+                <li>Python programming</li>
+                <li>C++ programming</li>
+                <li>C programming</li>
+                <li>Cybersecurity</li>
+                <li>Ethical Hacking</li>
+                <li>Digital forensics</li>
+                <li>Machine Learning</li>
+                <li>Microsoft DevOps</li>
+                <li>Android App Development</li>
+                <li>Web Development</li>
+                <li>Cloud Computing</li>
+                <li>HTML, CSS, JavaScript, PHP</li>
+                <li>Figma</li>
+                <li>Data Structure</li>
+                <li>AWS</li>
+            </ul>
+        </div>
+        <div class="extra">
+            <h2>Seminars / Trainings / Workshops</h2>
+            <p><strong>TensorFlow Campaign</strong> - 15 Feb, 2024<br> Institute: MIT ADT University<br> Key Skills: Machine Learning</p>
+            <h2>Extra Curricular Activities</h2>
+            <p><strong>Persona Publicity Team Member</strong><br> Promoted college fest Persona at multiple campuses, enhancing visibility and participation through strategic marketing and teamwork.</p>
+        </div>
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Abhishek Kumar
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message!');
+        });
+    </script>
+</body>
+
+</html>
